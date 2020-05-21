@@ -18,6 +18,7 @@
   margin-bottom: 5%;
   font-family: 'Montserrat', sans-serif;
   letter-spacing: .2rem;
+  cursor: pointer;
 }
 
 .reservation-card h3 {
