@@ -1,5 +1,6 @@
 import React from 'react';
 import ReservationCard from '../ReservationCard/ReservationCard';
+import './ReservationsContainer.css';
 
 const ReservationsContainer = ({reservations}) => {
   let currentReservation = reservations.map(reservation => {
