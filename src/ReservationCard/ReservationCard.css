@@ -1,0 +1,32 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500;800&display=swap');
+
+.reservation-card {
+  background-color: white;
+  width: 200px;
+  margin-bottom: 3%;
+  border: 5px solid teal;
+  border-radius: 9px;
+  color: teal;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.reservation-card button {
+  background-color: teal;
+  color: white;
+  width: 80%;
+  height: 20px;
+  margin-bottom: 5%;
+  font-family: 'Montserrat', sans-serif;
+  letter-spacing: .2rem;
+}
+
+.reservation-card h3 {
+  letter-spacing: .1rem;
+  font-size: 1.3rem;
+  margin-bottom: 0;
+}
+
+.reservation-card p {
+  font-size: .9rem;
+  line-height: .7rem;
+}
