@@ -17,6 +17,11 @@ class App extends Component {
     this.setState({reservations: data}, () => {console.log('state', this.state)});
   }
 
+  addUserInputToStateOfApp = (reservationInfoFromForm) => {
+    this.setState({reservations: [reservationInfoFromForm, ...this.state.reservations]},
+    () => {console.log('state after form submit', this.state)})
+  }
+
   componentDidMount = () => {
     this.getReservationData();
   }
@@ -25,7 +30,7 @@ class App extends Component {
     return (
       <main className="App">
         <h1 className='app-title'>Turing Cafe Reservations</h1>
-          <ReservationForm />
+          <ReservationForm addUserInputToStateOfApp={this.addUserInputToStateOfApp}/>
           <ReservationsContainer reservations={this.state.reservations} />
       </main>
     )
